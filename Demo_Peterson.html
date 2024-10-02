@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>  Demo Peterson Scheduling Algorithm</title>
+    <title>Peterson Scheduling Algorithm</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Style_Peterson.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
@@ -22,7 +22,7 @@
     </div>
     <nav class="navbar">
 		<div class="max-width">
-		  <div class="logo"><a href="index.html">Schedule<span>X.</span></a></div>
+		  <div class="logo"><a href="index.html">Schedule<span>X</span></a></div>
 		  <ul class="menu">
 			<li><a href="index.html" class="menu-btn">Home</a></li>
 			<li><a href="About_peterson.html" class="menu-btn">About</a></li>
@@ -53,26 +53,23 @@
 		<div class="popup-overlay"></div>
 		<div class="popup">
 		  <h2>Welcome to<br> Peterson Solution Scheduling !</h2>
-		  <p></p>
-		  <ul>
-			<li>Want to know about this simulator using</li><br>
-			<li>
-			  <div class="icon-container">
-				<a href="Guide/Guide PDF/Peterson guide section.pdf" target="_blank">
-				  <img src="Guide/file-pdf-solid.svg" alt="" style="height: 80px; padding-right: 20px;">
-				</a>
-				<div class="video-container">
-				  <a class="video-text" onclick="showVideo()">
-					<img src="Guide/video-solid.svg" alt="" style="height: 80px;padding-left: 150px;">
-				  </a>
-				  <div class="video-popup">
-					<iframe width="560" height="315" src="Guide/Guide Videos/Peterson Solution Scheduling.mp4" target="_blank" frameborder="0" allowfullscreen></iframe>
-					<span class="close-button" onclick="closeVideo()" style="color: aliceblue;">x</span>
-				  </div>
-				</div>
-			  </div>
-			</li>
-		  </ul>
+
+		  <p style="padding-bottom: 20px;">Learn how this simulator works:</p>
+        
+          <div class="icon-container">
+            <a href="Guide/Guide PDF/Peterson guide section.pdf" target="_blank">
+              <img src="Guide/file-pdf-solid.svg" alt="" style="height: 80px;padding-left: 20px;">
+            </a>
+            <div class="video-container">
+              <a class="video-text" onclick="showVideo()">
+                <img src="Guide/video-solid.svg" alt="" style="height: 80px;padding-left: 150px;">
+              </a>
+              <div class="video-popup">
+                <iframe width="560" height="315" src="Guide/Guide Videos/Peterson Solution Scheduling.mp4" frameborder="0" allowfullscreen></iframe>
+                <span class="close-button" onclick="closeVideo()">x</span>
+              </div>
+            </div>
+          </div>
 		  <button id="popup-close">Got it!</button>
 		</div>
 	  </div>

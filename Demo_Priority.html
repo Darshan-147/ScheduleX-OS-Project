@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Priority Scheduling Algorithm</title>
+  <title>Priority Scheduling Algorithm</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="Style_Priority.css">
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -26,21 +26,21 @@
   </div>
   <nav class="navbar">
 		<div class="max-width">
-		  <div class="logo"><a href="index.html">Schedule<span>X.</span></a></div>
+		  <div class="logo"><a href="index.html">Schedule<span>X</span></a></div>
 		  <ul class="menu">
 			<li><a href="index.html" class="menu-btn">Home</a></li>
-			<li><a href="About_peterson.html" class="menu-btn">About</a></li>
+			<li><a href="About_Priority.html" class="menu-btn">About</a></li>
 			<li><a href="index.html#services" class="menu-btn">Algorithms</a></li>
 			<li><a href="" class="menu-btn">Guide</a></li>
 			<li class="dropdown">
-			  <a href="#" class="menu-btn" id="dropdown-btn">Theams       <i class="fas fa-caret-down"></i></a>
+			  <a href="#" class="menu-btn" id="dropdown-btn">Theme      <i class="fas fa-caret-down"></i></a>
 			  <ul class="dropdown-content" id="dropdown-content" style="width: 150px; background-color: white;">
-				<li><a href="#" style="color: black;padding-left: 0px;padding-right: 0px; margin-left: 10px;" onclick="changeVideo('Videos/Demo_FCFS_Background.mp4')"><span class="rectangle"></span>Theam 1</a></li>
-				<li><a href="#" style="color: black;padding-left: 0px;padding-right: 0px; margin-left: 10px;" onclick="changeVideo('Videos/dots-120172.mp4')"><span class="rectangle"></span>Theam 2</a></li>
-				<li><a href="#" style="color: black;padding-left: 0px;padding-right: 0px; margin-left: 10px;" onclick="changeVideo('Videos/Demo_Peterson_Background.mp4')"><span class="rectangle"></span>Theam 3</a></li>
-        <li class="scrollable"><a href="#" style="color: black;padding-left: 0px;padding-right: 0px; margin-left: 10px;" onclick="changeVideo('Videos/production ID_4478322.mp4')"><span class="rectangle" ></span>Theam 4</a></li>
-        <li class="scrollable"><a href="#" style="color: black;padding-left: 0px;padding-right: 0px; margin-left: 10px;" onclick="changeVideo('Videos/video.mp4')"><span class="rectangle" ></span>Theam 5</a></li>
-        <li class="scrollable"><a href="#" style="color: black;padding-left: 0px;padding-right: 0px; margin-left: 10px;" onclick="changeVideo('Videos/network-80645.mp4')"><span class="rectangle" ></span>Theam 6</a></li>
+				<li><a href="#" style="color: black;padding-left: 0px;padding-right: 0px; margin-left: 10px;" onclick="changeVideo('Videos/Demo_FCFS_Background.mp4')"><span class="rectangle"></span>Theme 1</a></li>
+				<li><a href="#" style="color: black;padding-left: 0px;padding-right: 0px; margin-left: 10px;" onclick="changeVideo('Videos/dots-120172.mp4')"><span class="rectangle"></span>Theme 2</a></li>
+				<li><a href="#" style="color: black;padding-left: 0px;padding-right: 0px; margin-left: 10px;" onclick="changeVideo('Videos/Demo_Peterson_Background.mp4')"><span class="rectangle"></span>Theme 3</a></li>
+        <li class="scrollable"><a href="#" style="color: black;padding-left: 0px;padding-right: 0px; margin-left: 10px;" onclick="changeVideo('Videos/production ID_4478322.mp4')"><span class="rectangle" ></span>Theme 4</a></li>
+        <li class="scrollable"><a href="#" style="color: black;padding-left: 0px;padding-right: 0px; margin-left: 10px;" onclick="changeVideo('Videos/video.mp4')"><span class="rectangle" ></span>Theme 5</a></li>
+        <li class="scrollable"><a href="#" style="color: black;padding-left: 0px;padding-right: 0px; margin-left: 10px;" onclick="changeVideo('Videos/network-80645.mp4')"><span class="rectangle" ></span>Theme 6</a></li>
 				<li><a href="#" style="color: black;padding-left: 0px;padding-right: 0px; margin-left: 10px;" onclick="changeVideo('Videos/black-13495.mp4')"><span class="rectangle"></span>Original</a></li>
 			  </ul>
 			</li>
@@ -59,26 +59,23 @@
 		<div class="popup-overlay"></div>
 		<div class="popup">
 		  <h2>Welcome to<br> Priority CPU Scheduling !</h2>
-		  <p></p>
-		  <ul>
-			<li>want to know about this Simulator using</li><br>
-			<li>
-			  <div class="icon-container">
-				<a href="Guide/Guide PDF/Peterson guide section.pdf">
-				  <img src="Guide/file-pdf-solid.svg" alt="" style="height: 80px; padding-right: 20px;">
-				</a>
-				<div class="video-container">
-				  <a class="video-text" onclick="showVideo()">
-					<img src="Guide/video-solid.svg" alt="" style="height: 80px;padding-left: 150px;">
-				  </a>
-				  <div class="video-popup">
-					<iframe width="560" height="315" src="Guide/Guide Videos/Priority CPU Scheduling.mp4" frameborder="0" allowfullscreen></iframe>
-					<span class="close-button" onclick="closeVideo()">x</span>
-				  </div>
-				</div>
-			  </div>
-			</li>
-		  </ul>
+
+		  <p style="padding-bottom: 20px;">Learn how this simulator works:</p>
+        
+          <div class="icon-container">
+            <a href="Guide/Guide PDF/Priority Guide.pdf" target="_blank">
+              <img src="Guide/file-pdf-solid.svg" alt="" style="height: 80px;padding-left: 20px;">
+            </a>
+            <div class="video-container">
+              <a class="video-text" onclick="showVideo()">
+                <img src="Guide/video-solid.svg" alt="" style="height: 80px;padding-left: 150px;">
+              </a>
+              <div class="video-popup">
+                <iframe width="560" height="315" src="Guide/Guide Videos/Priority CPU Scheduling.mp4" frameborder="0" allowfullscreen></iframe>
+                <span class="close-button" onclick="closeVideo()">x</span>
+              </div>
+            </div>
+          </div>
 		  <button id="popup-close">Got it!</button>
 		</div>
 	  </div>
@@ -103,10 +100,12 @@
   <div class="table2">
     <br>
     <form action="index.php" method="post">
-      <input type="text" name="processIDInput" id="processIDInput" placeholder="Process ID" onkeypress="return isNumberKey(event)">
-      <input type="number" name="arrivalTimeInput" id="arrivalTimeInput" placeholder="Arrival Time">
-      <input type="number" name="cpuBurstTimeInput" id="cpuBurstTimeInput" placeholder="CPU Burst Time">
-      <input type="number" name="priorityInput" id="priorityInput" placeholder="Priority">
+      <div style="display: flex; gap: 20px;">
+        <input type="number" name="processIDInput" id="processIDInput" placeholder="Process ID" onkeypress="return isNumberKey(event)">
+        <input type="number" name="arrivalTimeInput" id="arrivalTimeInput" placeholder="Arrival Time">
+        <input type="number" name="cpuBurstTimeInput" id="cpuBurstTimeInput" placeholder="CPU Burst Time">
+        <input type="number" name="priorityInput" id="priorityInput" placeholder="Priority">
+      </div>
     </form>
   </div>
   </div>
